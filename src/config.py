@@ -2,7 +2,7 @@
 import os
 from pathlib import Path
 
-from src.utils import read_file_as_string
+from utils import read_file_as_string
 
 # Warning: This configuration is for demonstration purposes only.
 # DO NOT store secrets in this file.
