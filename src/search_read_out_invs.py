@@ -18,13 +18,15 @@ def main():
             ('move_type', '=', 'out_invoice'),
             ('state', 'not in', ('draft', 'cancel')),
             ]],
-        fields=['name', 'state'],
+        fields=['name', 'state', 'partner_id'],
         order='id desc',
         limit=5,
         )
 
     for inv_vals in out_invoices_vals:
-        print(f"{inv_vals['name']}, state: {inv_vals['state']}")
+        print(f"{inv_vals['name']}, "
+              f"state: {inv_vals['state']}, "
+              f"Customer: {inv_vals['partner_id'][1]}")
 
 
 if __name__ == '__main__':
