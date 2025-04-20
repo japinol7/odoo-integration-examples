@@ -11,7 +11,10 @@ ServerConfig = namedtuple(
 
 
 class OdooClient:
-    def __init__(self, host, dbname, username, password, port, proxy_url):
+    def __init__(
+            self, host, dbname, username,
+            password=None, port=None, proxy_url=None
+        ):
         self._server_data = self._get_server_data(
             host, dbname, username, password, port, proxy_url
             )
@@ -24,6 +27,9 @@ class OdooClient:
         return JsonRpcConnection(self._server_data)
 
     def _get_server_data(self, host, dbname, username, password, port, proxy_url):
+        if port is None:
+            raise ValueError("port must be specified")
+
         if password is None:
             password = getpass.getpass("Password/API Key token: ")
 
