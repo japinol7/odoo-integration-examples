@@ -5,6 +5,19 @@ from config import TEST_SERVER_ACCESS_CONFIG
 from odoo_jsonrpc.odoo.odoo_client import OdooClient
 
 
+def print_users_info(users_vals):
+    users_info = sorted((
+        (user['name'] or '',
+         user['login'] or '',
+         ) for user in users_vals),
+        key=lambda x: x[0].upper())
+
+    users_info_str = [f"{user[0]:50}{user[1]}" for user in users_info]
+
+    print(f"{'\n'.join(users_info_str)}\n"
+          f"{'-' * 80}\nTotal users found: {len(users_info)}")
+
+
 def main():
     """Example of usage for the odoo connection that uses jsonrpc or xmlrpc.
     Fetches active users and prints their username and login.
@@ -24,16 +37,7 @@ def main():
         limit=500,
         )
 
-    users_info = sorted((
-        (user['name'] or '',
-          user['login'] or '',
-          ) for user in users_vals),
-        key=lambda x: x[0].upper())
-
-    users_info_str = [f"{user[0]:50}{user[1]}" for user in users_info]
-
-    print(f"{'\n'.join(users_info_str)}\n"
-          f"{'-'*80}\nTotal users found: {len(users_info)}")
+    print_users_info(users_vals)
 
 
 if __name__ == '__main__':

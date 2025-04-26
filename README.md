@@ -43,13 +43,15 @@ to use xml-rpc instead of json-rpc.
 * call_model_method_get_invoice_types
 * call_model_method_message_post_on_move
 * call_model_method_message_post_on_sale
-* count_sale_orders
+* call_upgrade_modules_immediately
 * count_out_invs
+* count_sale_orders
 * create_out_inv
 * create_sale_quotation
 * get_server_version
 * read_out_invs
 * search_out_invs
+* search_read_contacts
 * search_read_out_invs
 * search_read_out_invs_and_their_lines
 * search_read_sale_orders
