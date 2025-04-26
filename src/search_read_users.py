@@ -24,9 +24,16 @@ def main():
         limit=500,
         )
 
-    for user_vals in users_vals:
-        print(f"{user_vals['name']:40} {user_vals['login']}")
-    print(f"{'-'*80}\nTotal users found: {len(users_vals)}")
+    users_info = sorted((
+        (user['name'] or '',
+          user['login'] or '',
+          ) for user in users_vals),
+        key=lambda x: x[0].upper())
+
+    users_info_str = [f"{user[0]:50}{user[1]}" for user in users_info]
+
+    print(f"{'\n'.join(users_info_str)}\n"
+          f"{'-'*80}\nTotal users found: {len(users_info)}")
 
 
 if __name__ == '__main__':

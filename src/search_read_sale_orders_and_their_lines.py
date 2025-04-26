@@ -37,11 +37,11 @@ def get_sales_vals(odoo):
         )
 
 
-def get_sale_lines_vals(odoo, order_line_id):
+def get_sale_lines_vals(odoo, order_line_ids):
     res = odoo.search_read(
         'sale.order.line',
         domain=[[
-            ('id', 'in', order_line_id),
+            ('id', 'in', order_line_ids),
             ]],
         fields=[
             'name', 'order_id', 'product_uom_qty',
@@ -82,9 +82,9 @@ def main():
     sales_vals = get_sales_vals(odoo)
 
     # Fetch all sales lines
-    order_line = [line for sale in sales_vals
+    order_line_ids = [line for sale in sales_vals
                  for line in sale['order_line']]
-    sale_lines_vals = get_sale_lines_vals(odoo, order_line)
+    sale_lines_vals = get_sale_lines_vals(odoo, order_line_ids)
 
     # Remove unnecessary sale order name info from the order id
     for line in sale_lines_vals:
