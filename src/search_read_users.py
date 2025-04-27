@@ -10,7 +10,7 @@ def print_users_info(users_vals):
         (user['name'] or '',
          user['login'] or '',
          ) for user in users_vals),
-        key=lambda x: x[0].upper())
+        key=lambda x: x[0].lower())
 
     users_info_str = [f"{user[0]:50}{user[1]}" for user in users_info]
 

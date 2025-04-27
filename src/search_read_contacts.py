@@ -11,7 +11,7 @@ def print_partners_info(partners_vals):
          partner['email'] or '',
          partner['country_id'] and partner['country_id'][1] or '',
          ) for partner in partners_vals),
-        key=lambda x: x[0].upper())
+        key=lambda x: x[0].lower())
 
     partners_info_str = [f"{p[0]:50}{p[1]:40}{p[2]}" for p in partners_info]
 
