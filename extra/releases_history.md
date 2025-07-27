@@ -1,5 +1,18 @@
 # Release History
 
+## v0.0.2
+
+### New features and improvements:
+* Add project toml files for packages, so they can be <br> installed from their directories:
+  * odoo-jsonrpc
+  * odoo-xmlrpc
+
+* Add examples of usage:
+  * search_read_sale_order_various
+
+* Update examples of usage imports with the new setup.
+
+
 ## v0.0.1
 
 ### New features and improvements:

@@ -2,7 +2,7 @@
 __author__ = 'Joan A. Pinol  (japinol)'
 
 from config import TEST_SERVER_ACCESS_CONFIG
-from odoo_jsonrpc.odoo.odoo_client import OdooClient
+from odoo_jsonrpc.odoo_client import OdooClient
 
 
 def print_partners_info(partners_vals):

@@ -5,7 +5,7 @@ from pprint import pp
 
 from config import TEST_SERVER_ACCESS_CONFIG
 from odoo_jsonrpc.odoo.tools.logger.logger import log
-from odoo_jsonrpc.odoo.odoo_client import OdooClient
+from odoo_jsonrpc.odoo_client import OdooClient
 
 RIBBON_STAGING_PARAMS_DEFAULT = {
     'ribbon.name': 'Staging',

@@ -1,20 +1,18 @@
-"""Example unlink_move."""
+"""Example get_server_version."""
 __author__ = 'Joan A. Pinol  (japinol)'
 
 from config import TEST_SERVER_ACCESS_CONFIG
-from odoo_jsonrpc.odoo.odoo_client import OdooClient
+from odoo_jsonrpc.odoo_client import OdooClient
 
 
 def main():
     """Example of usage for the odoo connection that uses jsonrpc or xmlrpc.
-    Deletes a given invoice.
+    Gets the server version.
     """
     odoo = OdooClient(**TEST_SERVER_ACCESS_CONFIG).client
 
-    odoo.unlink(
-        'account.move',
-        ids=[29],
-        )
+    version = odoo.get_server_version()
+    print(f"Odoo server version: {version}")
 
 
 if __name__ == '__main__':

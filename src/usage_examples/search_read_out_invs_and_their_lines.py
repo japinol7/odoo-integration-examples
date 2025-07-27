@@ -4,7 +4,7 @@ __author__ = 'Joan A. Pinol  (japinol)'
 from itertools import groupby
 
 from config import TEST_SERVER_ACCESS_CONFIG
-from odoo_jsonrpc.odoo.odoo_client import OdooClient
+from odoo_jsonrpc.odoo_client import OdooClient
 
 MAX_INVOICES_TO_FETCH = 5
 MAX_INVOICE_LINES_TO_FETCH = 400

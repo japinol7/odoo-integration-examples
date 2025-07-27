@@ -1,27 +1,25 @@
-"""Example call_model_method_get_invoice_types."""
+"""Example write_move."""
 __author__ = 'Joan A. Pinol  (japinol)'
 
 from config import TEST_SERVER_ACCESS_CONFIG
-from odoo_jsonrpc.odoo.odoo_client import OdooClient
+from odoo_jsonrpc.odoo_client import OdooClient
 
 
 def main():
     """Example of usage for the odoo connection that uses jsonrpc or xmlrpc.
-    Calls a given method on the account move model to get all the
-    invoice types, including receipts.
+    Changes the narration and the checked fields of two invoices.
     """
     odoo = OdooClient(**TEST_SERVER_ACCESS_CONFIG).client
 
-    invoice_types = odoo.call(
+    odoo.write(
         'account.move',
-        method='get_invoice_types',
+        ids=[1, 2],
         values={
-            'include_receipts': True,
+            'narration': 'TEST',
+            'checked': True,
             },
         )
 
-    print(invoice_types)
-    
 
 if __name__ == '__main__':
     main()

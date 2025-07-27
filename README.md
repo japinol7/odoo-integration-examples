@@ -2,7 +2,7 @@
     Odoo integration examples in Python using json-rpc and xml-rpc.
 <br>
 
-	version: 0.0.1
+	version: 0.0.2
 	author: Joan A. Pinol
 	author_nickname: japinol
 	author_gitHub: japinol7
@@ -54,6 +54,7 @@ to use xml-rpc instead of json-rpc.
 * search_read_contacts
 * search_read_out_invs
 * search_read_out_invs_and_their_lines
+* search_read_sale_order_various
 * search_read_sale_orders
 * search_read_sale_orders_and_their_lines
 * search_read_users
@@ -61,3 +62,19 @@ to use xml-rpc instead of json-rpc.
 * write_addon_state_to_upgrade
 * write_environment_ribbon
 * write_move
+
+
+### Install package odoo-jsonrpc
+Go to the package directory and install the package: <br>
+
+    $ cd src/odoorpc/odoo_jsonrpc/
+    $ pip install .
+
+
+### Install package odoo-xmlrpc
+Go to the package directory and install the package: <br>
+
+    $ cd src/odoorpc/odoo_xmlrpc/
+    $ pip install .
+
+.
