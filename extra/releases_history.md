@@ -1,5 +1,16 @@
 # Release History
 
+## v0.0.3
+
+### New features and improvements:
+* We have moved the Odoo RPC clients to separate repositories and added them as dependencies.
+    * odoo-jsonrpc
+    * odoo-xmlrpc
+
+* Add examples of usage:
+    * search_read_products
+
+
 ## v0.0.2
 
 ### New features and improvements:

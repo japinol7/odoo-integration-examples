@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2020, 2024 Joan A. Pinol
+Copyright (c) 2020, 2024, 2025 Joan A. Pinol
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

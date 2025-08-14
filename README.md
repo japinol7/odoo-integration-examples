@@ -1,15 +1,19 @@
 ## Odoo integration examples: json-rpc and xml-rpc clients
     Odoo integration examples in Python using json-rpc and xml-rpc.
+    We have moved the Odoo RPC clients to separate repositories 
+    and added them as dependencies.
 <br>
 
-	version: 0.0.2
+	version: 0.0.3
 	author: Joan A. Pinol
 	author_nickname: japinol
 	author_gitHub: japinol7
 	author_twitter: @japinol
 <br>
 
-	Dependencies: None.
+	Dependencies:
+      * git+https://github.com/japinol7/odoo-jsonrpc.git@v0.0.2
+      * git+https://github.com/japinol7/odoo-xmlrpc.git@v0.0.2
 	Python requires: 3.13 or greater.
     Tested against Odoo 18.0 CE.
 <br>
@@ -25,7 +29,7 @@
 
 <br>
 
-### Implemented clients
+### Implemented Odoo RPC clients added as dependencies
 * odoo_jsonrpc
   * odoo_client     -> Te odoo client with the API interface
   * simple_jsonrpc  -> The underlying json-rpc client and connection.
@@ -54,6 +58,7 @@ to use xml-rpc instead of json-rpc.
 * search_read_contacts
 * search_read_out_invs
 * search_read_out_invs_and_their_lines
+* search_read_products
 * search_read_sale_order_various
 * search_read_sale_orders
 * search_read_sale_orders_and_their_lines
@@ -62,19 +67,5 @@ to use xml-rpc instead of json-rpc.
 * write_addon_state_to_upgrade
 * write_environment_ribbon
 * write_move
-
-
-### Install package odoo-jsonrpc
-Go to the package directory and install the package: <br>
-
-    $ cd src/odoorpc/odoo_jsonrpc/
-    $ pip install .
-
-
-### Install package odoo-xmlrpc
-Go to the package directory and install the package: <br>
-
-    $ cd src/odoorpc/odoo_xmlrpc/
-    $ pip install .
 
 .
