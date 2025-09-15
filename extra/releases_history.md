@@ -1,5 +1,16 @@
 # Release History
 
+## v0.0.4
+
+### New features and improvements:
+* Add examples of usage:
+    * read_sales
+    * search_read_companies
+    * search_read_product_various
+* Improve examples of usage:
+    * search_read_product_various
+
+
 ## v0.0.3
 
 ### New features and improvements:

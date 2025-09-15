@@ -4,7 +4,7 @@
     and added them as dependencies.
 <br>
 
-	version: 0.0.3
+	version: 0.0.4
 	author: Joan A. Pinol
 	author_nickname: japinol
 	author_gitHub: japinol7
@@ -54,10 +54,13 @@ to use xml-rpc instead of json-rpc.
 * create_sale_quotation
 * get_server_version
 * read_out_invs
+* read_sales
 * search_out_invs
+* search_read_companies
 * search_read_contacts
 * search_read_out_invs
 * search_read_out_invs_and_their_lines
+* search_read_product_various
 * search_read_products
 * search_read_sale_order_various
 * search_read_sale_orders
