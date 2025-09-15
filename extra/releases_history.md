@@ -8,7 +8,7 @@
     * search_read_companies
     * search_read_product_various
 * Improve examples of usage:
-    * search_read_product_various
+    * search_read_sale_order_various
 
 
 ## v0.0.3
