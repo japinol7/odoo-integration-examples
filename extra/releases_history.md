@@ -4,11 +4,17 @@
 
 ### New features and improvements:
 * Add examples of usage:
+    * get_db_list
+    * read_group_sales
     * read_sales
+    * read_sales_more_info
     * search_read_companies
     * search_read_product_various
+    * unlink_sale_order
+    * write_sale_order
 * Improve examples of usage:
-    * search_read_sale_order_various
+    * search_read_product_various
+* Upgrade examples to the new client api changes.
 
 
 ## v0.0.3

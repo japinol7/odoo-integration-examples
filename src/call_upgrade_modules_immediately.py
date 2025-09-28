@@ -32,11 +32,11 @@ def get_modules_not_found(odoo, modules_to_upgrade, module_ids):
 
 def upgrade_modules(odoo, module_ids):
     try:
-        odoo.call_kw_on_instances(
+        odoo.call(
             'ir.module.module',
             method='button_immediate_upgrade',
-            ids=[module_ids],
-            values={},
+            ids=module_ids,
+            kwargs={},
             )
     except Exception as e:
         print(f"Error upgrading modules: {e}")

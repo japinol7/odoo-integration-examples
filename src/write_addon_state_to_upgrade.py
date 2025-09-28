@@ -2,8 +2,8 @@
 __author__ = 'Joan A. Pinol  (japinol)'
 
 from config import TEST_SERVER_ACCESS_CONFIG
-from odoo_jsonrpc.odoo.tools.logger.logger import log
 from odoo_jsonrpc.odoo_client import OdooClient
+from odoo_jsonrpc.tools.logger.logger import log
 
 
 def fetch_addon_id(odoo, addon_name):
@@ -39,7 +39,7 @@ def main():
     """
     odoo = OdooClient(**TEST_SERVER_ACCESS_CONFIG).client
 
-    addon_name = 'jap_sale'
+    addon_name = 'module_name'
     addon_id = fetch_addon_id(odoo, addon_name)
 
     if not addon_id:

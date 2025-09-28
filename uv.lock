@@ -20,9 +20,9 @@ requires-dist = [
 [[package]]
 name = "odoo-jsonrpc"
 version = "0.0.2"
-source = { git = "https://github.com/japinol7/odoo-jsonrpc.git?rev=v0.0.2#89bf37d0dbd75866f7621329509debf786b87ce1" }
+source = { git = "https://github.com/japinol7/odoo-jsonrpc.git?rev=v0.0.2#ba563254789b27e331f6eb772be1aac2559ae663" }
 
 [[package]]
 name = "odoo-xmlrpc"
 version = "0.0.2"
-source = { git = "https://github.com/japinol7/odoo-xmlrpc.git?rev=v0.0.2#eeae8a4985810c2b83b973756db1e7fb4501bf0c" }
+source = { git = "https://github.com/japinol7/odoo-xmlrpc.git?rev=v0.0.2#083fe9caa2376cbd933ea8c87b8e99c265e0ece9" }

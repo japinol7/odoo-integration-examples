@@ -1,5 +1,7 @@
-"""Example call_model_method_message_post_on_sale."""
+"""Example read_group_sales."""
 __author__ = 'Joan A. Pinol  (japinol)'
+
+from pprint import pp
 
 from config import TEST_SERVER_ACCESS_CONFIG
 from odoo_jsonrpc.odoo_client import OdooClient
@@ -7,19 +9,18 @@ from odoo_jsonrpc.odoo_client import OdooClient
 
 def main():
     """Example of usage for the odoo connection that uses jsonrpc or xmlrpc.
-    Calls the message post method on a sale order instance.
+    Gets the aggregated amounts of all sales grouped by company.
     """
     odoo = OdooClient(**TEST_SERVER_ACCESS_CONFIG).client
 
-    odoo.call(
+    data = odoo.read_group(
         'sale.order',
-        method='message_post',
-        ids=[1],
-        kwargs={
-            'body': 'TEST Message from your friendly developer buddy',
-            'message_type': 'comment',
-            },
+        domain=[[ ]],
+        fields=['company_id', 'amount_untaxed', 'amount_total'],
+        group_by=['company_id'],
         )
+
+    pp(data)
 
 
 if __name__ == '__main__':

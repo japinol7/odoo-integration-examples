@@ -4,8 +4,8 @@ __author__ = 'Joan A. Pinol  (japinol)'
 from pprint import pp
 
 from config import TEST_SERVER_ACCESS_CONFIG
-from odoo_jsonrpc.odoo.tools.logger.logger import log
 from odoo_jsonrpc.odoo_client import OdooClient
+from odoo_jsonrpc.tools.logger.logger import log
 
 RIBBON_STAGING_PARAMS_DEFAULT = {
     'ribbon.name': 'Staging',
@@ -15,7 +15,7 @@ RIBBON_STAGING_PARAMS_DEFAULT = {
 RIBBON_STAGING_PARAMS_CUSTOM = {
     'ribbon.name': 'Staging JP-1',
     'ribbon.color': '#ee0505',
-    'ribbon.background.color': 'rgba(255,175,0,.6)',
+    'ribbon.background.color': 'rgba(40,255,40,.6)',
     }
 
 
