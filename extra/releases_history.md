@@ -14,7 +14,6 @@
     * write_sale_order
 * Improve examples of usage:
     * search_read_product_various
-* Upgrade examples to the new client api changes.
 
 
 ## v0.0.3
@@ -50,9 +49,9 @@
   * Add xml-rpc connector and client.
 
 * Add examples of usage:
+  * call_method_message_post_on_move
+  * call_method_message_post_on_sale
   * call_model_method_get_invoice_types
-  * call_model_method_message_post_on_move
-  * call_model_method_message_post_on_sale
   * call_upgrade_modules_immediately
   * count_out_invs
   * count_sale_orders
