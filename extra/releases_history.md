@@ -1,5 +1,11 @@
 # Release History
 
+## v0.0.5
+* Bump dependencies.
+
+
+### New features and improvements:
+
 ## v0.0.4
 
 ### New features and improvements:

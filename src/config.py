@@ -22,6 +22,7 @@ TEST_SERVER_ACCESS_CONFIG = {
     'password': read_file_as_string(
         ODOO_SECRETS_TOKEN_FILE_NAME).strip() or 'odoo',
     'port': 8069,
+    'timeout': 14,
     'proxy_url': read_file_as_string(
         ODOO_PROXY_URL_FILE_NAME).strip() or None,
     }
