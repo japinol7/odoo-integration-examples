@@ -1,4 +1,4 @@
-"""Example call_model_method_message_post_on_sale."""
+"""Example call_method_message_post_on_sale."""
 __author__ = 'Joan A. Pinol  (japinol)'
 
 from config import TEST_SERVER_ACCESS_CONFIG
