@@ -1,5 +1,16 @@
 # Release History
 
+## v0.0.6
+
+### New features and improvements:
+
+* Add examples of usage:
+    * xt_erp_import_sale_order_server_data_create
+    * xt_erp_import_sale_order_server_data_read
+    * xt_erp_import_sale_order_server_data_unlink
+    * xt_erp_import_sale_order_server_data_write
+
+
 ## v0.0.5
 
 ### New features and improvements:

@@ -4,7 +4,7 @@
     and added them as dependencies.
 <br>
 
-	version: 0.0.5
+	version: 0.0.6
 	author: Joan A. Pinol
 	author_nickname: japinol
 	author_gitHub: japinol7
@@ -75,5 +75,9 @@ to use xml-rpc instead of json-rpc.
 * write_environment_ribbon
 * write_move
 * write_sale_order
+* xt_erp_import_sale_order_server_data_create
+* xt_erp_import_sale_order_server_data_read
+* xt_erp_import_sale_order_server_data_unlink
+* xt_erp_import_sale_order_server_data_write
 
 .
