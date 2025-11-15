@@ -1,4 +1,5 @@
 """Example xt_erp_import_sale_order_server_data_unlink."""
+__author__ = 'Joan A. Pinol  (japinol)'
 
 from config import TEST_SERVER_ACCESS_CONFIG
 from odoo_jsonrpc.odoo_client import OdooClient

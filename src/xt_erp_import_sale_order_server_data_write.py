@@ -1,4 +1,5 @@
 """Example xt_erp_import_sale_order_server_data_write."""
+__author__ = 'Joan A. Pinol  (japinol)'
 
 import getpass
 
