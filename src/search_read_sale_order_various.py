@@ -18,7 +18,7 @@ def get_not_confirmed_sale_order_name(odoo):
         fields=['name'],
         order='id desc',
         limit=1,
-    )
+        )
     return out_sales_vals and  out_sales_vals[0]['name'] or None
 
 
@@ -31,7 +31,7 @@ def get_sale_order_state(odoo, sale_name):
         fields=['name', 'state'],
         order='id desc',
         limit=1,
-    )
+        )
     return out_sales_vals[0]['state']
 
 
