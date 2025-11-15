@@ -5,10 +5,11 @@
 ### New features and improvements:
 
 * Add examples of usage:
-    * xt_erp_import_sale_order_server_data_create
-    * xt_erp_import_sale_order_server_data_read
-    * xt_erp_import_sale_order_server_data_unlink
-    * xt_erp_import_sale_order_server_data_write
+  * call_model_method_jap_waste_some_time
+  * xt_erp_import_sale_order_server_data_create
+  * xt_erp_import_sale_order_server_data_read
+  * xt_erp_import_sale_order_server_data_unlink
+  * xt_erp_import_sale_order_server_data_write
 
 
 ## v0.0.5
@@ -21,27 +22,27 @@
 
 ### New features and improvements:
 * Add examples of usage:
-    * get_db_list
-    * read_group_sales
-    * read_sales
-    * read_sales_more_info
-    * search_read_companies
-    * search_read_product_various
-    * unlink_sale_order
-    * write_sale_order
+  * get_db_list
+  * read_group_sales
+  * read_sales
+  * read_sales_more_info
+  * search_read_companies
+  * search_read_product_various
+  * unlink_sale_order
+  * write_sale_order
 * Improve examples of usage:
-    * search_read_product_various
+  * search_read_product_various
 
 
 ## v0.0.3
 
 ### New features and improvements:
 * We have moved the Odoo RPC clients to separate repositories and added them as dependencies.
-    * odoo-jsonrpc
-    * odoo-xmlrpc
+  * odoo-jsonrpc
+  * odoo-xmlrpc
 
 * Add examples of usage:
-    * search_read_products
+  * search_read_products
 
 
 ## v0.0.2

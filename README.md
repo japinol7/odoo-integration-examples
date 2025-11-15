@@ -47,6 +47,7 @@ to use xml-rpc instead of json-rpc.
 * call_method_message_post_on_move
 * call_method_message_post_on_sale
 * call_model_method_get_invoice_types
+* call_model_method_jap_waste_some_time
 * call_upgrade_modules_immediately
 * count_out_invs
 * count_sale_orders
