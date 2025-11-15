@@ -6,6 +6,7 @@
 
 * Add examples of usage:
   * call_model_method_jap_waste_some_time
+  * read_group_out_invoices
   * xt_erp_import_sale_order_server_data_create
   * xt_erp_import_sale_order_server_data_read
   * xt_erp_import_sale_order_server_data_unlink

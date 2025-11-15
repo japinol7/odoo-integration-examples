@@ -55,6 +55,7 @@ to use xml-rpc instead of json-rpc.
 * create_sale_quotation
 * get_db_list
 * get_server_version
+* read_group_out_invoices
 * read_group_sales
 * read_out_invs
 * read_sales
