@@ -25,9 +25,9 @@ def get_grouped(dataset, key_group):
 def get_sales_vals(odoo):
     return odoo.search_read(
         'sale.order',
-        domain=[[
+        domain=[
             ('state', 'not in', ('draft', 'cancel')),
-            ]],
+            ],
         fields=['name', 'state', 'date_order', 'currency_id',
                 'amount_untaxed', 'amount_total',
                 'order_line',
@@ -40,9 +40,9 @@ def get_sales_vals(odoo):
 def get_sale_lines_vals(odoo, order_line_ids):
     res = odoo.search_read(
         'sale.order.line',
-        domain=[[
+        domain=[
             ('id', 'in', order_line_ids),
-            ]],
+            ],
         fields=[
             'name', 'order_id', 'product_uom_qty',
             'price_unit', 'price_subtotal',

@@ -27,8 +27,7 @@ def main():
 
     partners_vals = odoo.search_read(
         'res.partner',
-        domain=[[
-            ]],
+        domain=[],
         fields=['name', 'email', 'country_id'],
         order='name',
         limit=500,

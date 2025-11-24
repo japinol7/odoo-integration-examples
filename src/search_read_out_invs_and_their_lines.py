@@ -25,10 +25,10 @@ def get_grouped(dataset, key_group):
 def get_out_invoices_vals(odoo):
     return odoo.search_read(
         'account.move',
-        domain=[[
+        domain=[
             ('move_type', '=', 'out_invoice'),
             ('state', 'not in', ('draft', 'cancel')),
-            ]],
+            ],
         fields=['name', 'state', 'invoice_date',
                 'currency_id', 'amount_untaxed',
                 'amount_total', 'invoice_line_ids',
@@ -41,9 +41,9 @@ def get_out_invoices_vals(odoo):
 def get_invoice_lines_vals(odoo, line_ids):
     res = odoo.search_read(
         'account.move.line',
-        domain=[[
+        domain=[
             ('id', 'in', line_ids),
-            ]],
+            ],
         fields=[
             'name', 'move_id', 'quantity', 'price_unit',
             'price_subtotal',

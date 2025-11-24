@@ -9,10 +9,10 @@ def search_installed_module_ids(odoo, module_names):
     """Searches modules by name."""
     return odoo.search(
         'ir.module.module',
-        domain=[[
+        domain=[
             ('name', 'in', module_names),
             ('state', 'in', ('installed', 'to upgrade')),
-            ]],
+            ],
         order='name ASC',
         limit=len(module_names),
         )

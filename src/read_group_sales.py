@@ -15,7 +15,7 @@ def main():
 
     data = odoo.read_group(
         'sale.order',
-        domain=[[ ]],
+        domain=[],
         fields=['company_id', 'amount_untaxed', 'amount_total'],
         group_by=['company_id'],
         )

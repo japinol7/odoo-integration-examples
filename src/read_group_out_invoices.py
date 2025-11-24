@@ -15,10 +15,10 @@ def main():
 
     data = odoo.read_group(
         'account.move',
-        domain=[[
+        domain=[
             ('move_type', '=', 'out_invoice'),
             ('state', 'not in', ('draft', 'cancel')),
-            ]],
+            ],
         fields=['company_id', 'amount_untaxed', 'amount_total'],
         group_by=['company_id'],
         )

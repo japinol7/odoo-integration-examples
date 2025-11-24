@@ -26,12 +26,12 @@ def main():
 
     users_vals = odoo.search_read(
         'res.users',
-        domain=[[
+        domain=[
             # This domain condition ensures only active users are fetched,
             # although this is not strictly necessary as odoo defaults
             # to active records.
             ('active', '=', True),
-            ]],
+            ],
         fields=['name', 'login'],
         order='name',
         limit=500,

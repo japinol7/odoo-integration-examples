@@ -13,9 +13,9 @@ def main():
 
     products_vals = odoo.search_read(
         'product.template',
-        domain=[[
+        domain=[
             ('sale_ok', '=', True),
-            ]],
+            ],
         fields=['name', 'type', 'sale_ok', 'purchase_ok'],
         order='name',
         limit=5000,

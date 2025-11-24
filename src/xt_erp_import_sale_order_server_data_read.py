@@ -16,7 +16,7 @@ def main():
 
     vals = odoo.search_read(
         'jap.import.sale.order.from.ext.odoo',
-        domain=[[]],
+        domain=[],
         fields=[
             'id', 'url', 'dbname', 'username', 'proxy_host', 'proxy_port'],
         order='id desc',

@@ -14,10 +14,10 @@ def main():
 
     out_invoices_ids = odoo.search(
         'account.move',
-        domain=[[
+        domain=[
             ('move_type', '=', 'out_invoice'),
             ('state', 'not in', ('draft', 'cancel')),
-            ]],
+            ],
         order='id desc',
         limit=5,
         )

@@ -13,9 +13,9 @@ def main():
 
     count_out_sales = odoo.search_count(
         'sale.order',
-        domain=[[
+        domain=[
             ('state', 'not in', ('draft', 'sent', 'cancel')),
-            ]],
+            ],
         )
 
     print(f"Number of confirmed sales: {count_out_sales}")

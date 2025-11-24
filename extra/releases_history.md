@@ -1,5 +1,11 @@
 # Release History
 
+## v0.0.7
+
+### New features and improvements:
+* Update examples to reflect domain argument changes in the client APIs.
+
+
 ## v0.0.6
 
 ### New features and improvements:

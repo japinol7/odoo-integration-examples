@@ -14,7 +14,7 @@ def main():
 
     record_ids = odoo.search(
         'jap.import.sale.order.from.ext.odoo',
-        domain=[[]],
+        domain=[],
         order='id desc',
         )
 

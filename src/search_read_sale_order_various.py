@@ -12,9 +12,9 @@ def get_odoo_client():
 def get_not_confirmed_sale_order_name(odoo):
     out_sales_vals = odoo.search_read(
         'sale.order',
-        domain=[[
+        domain=[
             ('state', '=', 'draft'),
-            ]],
+            ],
         fields=['name'],
         order='id desc',
         limit=1,
@@ -25,9 +25,9 @@ def get_not_confirmed_sale_order_name(odoo):
 def get_sale_order_state(odoo, sale_name):
     out_sales_vals = odoo.search_read(
         'sale.order',
-        domain=[[
+        domain=[
             ('name', '=', sale_name),
-            ]],
+            ],
         fields=['name', 'state'],
         order='id desc',
         limit=1,

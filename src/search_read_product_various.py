@@ -12,11 +12,11 @@ def get_odoo_client():
 def get_sale_product(odoo, min_price, max_price):
     products_vals = odoo.search_read(
         'product.template',
-        domain=[[
+        domain=[
             ('sale_ok', '=', True),
             ('list_price', '>=', min_price),
             ('list_price', '<=', max_price),
-            ]],
+            ],
         fields=['name'],
         order='id desc',
         limit=1,
@@ -27,9 +27,9 @@ def get_sale_product(odoo, min_price, max_price):
 def get_product_price(odoo, product_name):
     products_vals = odoo.search_read(
         'product.template',
-        domain=[[
+        domain=[
             ('name', '=', product_name),
-            ]],
+            ],
         fields=['name', 'list_price'],
         order='id desc',
         limit=1,

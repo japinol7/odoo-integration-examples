@@ -14,9 +14,9 @@ def main():
 
     out_sales_vals = odoo.search_read(
         'sale.order',
-        domain=[[
+        domain=[
             ('state', 'not in', ('draft', 'sent', 'cancel')),
-            ]],
+            ],
         fields=['name', 'state', 'partner_id'],
         order='id desc',
         limit=5,

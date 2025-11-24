@@ -14,10 +14,10 @@ def main():
 
     out_invoices_vals = odoo.search_read(
         'account.move',
-        domain=[[
+        domain=[
             ('move_type', '=', 'out_invoice'),
             ('state', 'not in', ('draft', 'cancel')),
-            ]],
+            ],
         fields=['name', 'state', 'partner_id'],
         order='id desc',
         limit=5,

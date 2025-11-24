@@ -13,10 +13,10 @@ def main():
 
     count_out_invoices = odoo.search_count(
         'account.move',
-        domain=[[
+        domain=[
             ('move_type', '=', 'out_invoice'),
             ('state', 'not in', ('draft', 'cancel')),
-            ]],
+            ],
         )
 
     print(f"Number of posted out invoices: {count_out_invoices}")

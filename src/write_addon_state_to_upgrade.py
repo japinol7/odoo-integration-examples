@@ -9,12 +9,12 @@ from odoo_jsonrpc.tools.logger.logger import log
 def fetch_addon_id(odoo, addon_name):
     addon_ids = odoo.search(
         'ir.module.module',
-        domain=[[
+        domain=[
             ('name', '=', addon_name),
             ('state', 'not in',
                 ('uninstalled', 'to install', 'uninstallable')
              ),
-            ]],
+            ],
         limit=1,
         )
     if not addon_ids:
