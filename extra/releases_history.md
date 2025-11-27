@@ -11,7 +11,7 @@
     * xt_erp_import_sale_order_server_data_write_proxy
 
 
-## v0.0.8
+## v0.0.7
 
 ### New features and improvements:
 * Update examples to reflect domain argument changes in the client APIs.
