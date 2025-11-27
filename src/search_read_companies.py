@@ -13,7 +13,7 @@ def main():
 
     companies_vals = odoo.search_read(
         'res.company',
-        domain=[],
+        domain=[ ],
         fields=['name'],
         order='id desc',
         limit=15,

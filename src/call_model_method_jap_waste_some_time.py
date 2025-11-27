@@ -13,6 +13,7 @@ def main():
     for this example, and it does not exist in Odoo Core.
     The called method should log each second wasted and return the
     total seconds wasted.
+    It should waste time only if the context has this key: ctx_jap_allow_waste_some_time.
     """
     odoo = OdooClient(**TEST_SERVER_ACCESS_CONFIG).client
 
@@ -22,6 +23,7 @@ def main():
         kwargs={
             'time_to_waste': 2,
             },
+        context={'ctx_jap_allow_waste_some_time': True},
         )
 
     log.info(f"Seconds wasted: {res}")

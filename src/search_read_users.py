@@ -28,7 +28,7 @@ def main():
         'res.users',
         domain=[
             # This domain condition ensures only active users are fetched,
-            # although this is not strictly necessary as odoo defaults
+            # although this is not strictly necessary as Odoo defaults
             # to active records.
             ('active', '=', True),
             ],

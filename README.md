@@ -4,7 +4,7 @@
     and added them as dependencies.
 <br>
 
-	version: 0.0.7
+	version: 0.0.8
 	author: Joan A. Pinol
 	author_nickname: japinol
 	author_gitHub: japinol7
@@ -12,8 +12,8 @@
 <br>
 
 	Dependencies:
-      * git+https://github.com/japinol7/odoo-jsonrpc.git@v0.0.4
-      * git+https://github.com/japinol7/odoo-xmlrpc.git@v0.0.4
+      * git+https://github.com/japinol7/odoo-jsonrpc.git@v0.0.5
+      * git+https://github.com/japinol7/odoo-xmlrpc.git@v0.0.5
 	Python requires: 3.13 or greater.
     Tested against Odoo 18.0 CE.
 <br>
@@ -67,6 +67,8 @@ to use xml-rpc instead of json-rpc.
 * search_read_out_invs_and_their_lines
 * search_read_product_various
 * search_read_products
+* search_read_products_with_context
+* search_read_products_with_global_context
 * search_read_sale_order_various
 * search_read_sale_orders
 * search_read_sale_orders_and_their_lines
@@ -81,5 +83,7 @@ to use xml-rpc instead of json-rpc.
 * xt_erp_import_sale_order_server_data_read
 * xt_erp_import_sale_order_server_data_unlink
 * xt_erp_import_sale_order_server_data_write
+* xt_erp_import_sale_order_server_data_write_domain
+* xt_erp_import_sale_order_server_data_write_proxy
 
 .

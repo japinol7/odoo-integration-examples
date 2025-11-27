@@ -1,6 +1,17 @@
 # Release History
 
-## v0.0.7
+## v0.0.8
+
+### New features and improvements:
+* Update examples to reflect context argument changes in the client APIs.
+* Add examples of usage:
+    * search_read_products_with_context
+    * search_read_products_with_global_context
+    * xt_erp_import_sale_order_server_data_write_domain
+    * xt_erp_import_sale_order_server_data_write_proxy
+
+
+## v0.0.8
 
 ### New features and improvements:
 * Update examples to reflect domain argument changes in the client APIs.
