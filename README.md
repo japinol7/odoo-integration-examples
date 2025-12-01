@@ -12,8 +12,8 @@
 <br>
 
 	Dependencies:
-      * git+https://github.com/japinol7/odoo-jsonrpc.git@v0.0.5
-      * git+https://github.com/japinol7/odoo-xmlrpc.git@v0.0.5
+      * git+https://github.com/japinol7/odoo-jsonrpc.git@v0.0.6
+      * git+https://github.com/japinol7/odoo-xmlrpc.git@v0.0.6
 	Python requires: 3.13 or greater.
     Tested against Odoo 18.0 CE.
 <br>

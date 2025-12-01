@@ -10,5 +10,5 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-odoo-jsonrpc = { git = "https://github.com/japinol7/odoo-jsonrpc.git", rev = "v0.0.5" }
-odoo-xmlrpc = { git = "https://github.com/japinol7/odoo-xmlrpc.git", rev = "v0.0.5" }
+odoo-jsonrpc = { git = "https://github.com/japinol7/odoo-jsonrpc.git", rev = "v0.0.6" }
+odoo-xmlrpc = { git = "https://github.com/japinol7/odoo-xmlrpc.git", rev = "v0.0.6" }

@@ -13,16 +13,16 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "odoo-jsonrpc", git = "https://github.com/japinol7/odoo-jsonrpc.git?rev=v0.0.5" },
-    { name = "odoo-xmlrpc", git = "https://github.com/japinol7/odoo-xmlrpc.git?rev=v0.0.5" },
+    { name = "odoo-jsonrpc", git = "https://github.com/japinol7/odoo-jsonrpc.git?rev=v0.0.6" },
+    { name = "odoo-xmlrpc", git = "https://github.com/japinol7/odoo-xmlrpc.git?rev=v0.0.6" },
 ]
 
 [[package]]
 name = "odoo-jsonrpc"
-version = "0.0.5"
-source = { git = "https://github.com/japinol7/odoo-jsonrpc.git?rev=v0.0.5#48fa09ed4530c6d7e02fbfdd3366d98efb565866" }
+version = "0.0.6"
+source = { git = "https://github.com/japinol7/odoo-jsonrpc.git?rev=v0.0.6#4e6d96aad5c27649bccc0e59142187dd92a45591" }
 
 [[package]]
 name = "odoo-xmlrpc"
-version = "0.0.5"
-source = { git = "https://github.com/japinol7/odoo-xmlrpc.git?rev=v0.0.5#46cf6b56cd29dec50cb97d95925215bd37b21ce0" }
+version = "0.0.6"
+source = { git = "https://github.com/japinol7/odoo-xmlrpc.git?rev=v0.0.6#627a2a5b5f2d485e5abba464abc9fd201e3f1062" }
