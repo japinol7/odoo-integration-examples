@@ -22,6 +22,7 @@
 ### More info
 
 * Official Odoo documentation
+  * [Web Services — Odoo 18.0 documentation](https://www.odoo.com/documentation/18.0/developer/howtos/web_services.html)
   * [External API — Odoo 18.0 documentation](https://www.odoo.com/documentation/18.0/developer/reference/external_api.html)
 
 * Official json-rpc documentation
