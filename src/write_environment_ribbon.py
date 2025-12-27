@@ -15,7 +15,7 @@ RIBBON_STAGING_PARAMS_DEFAULT = {
 RIBBON_STAGING_PARAMS_CUSTOM = {
     'ribbon.name': 'Staging JP-1',
     'ribbon.color': '#ee0505',
-    'ribbon.background.color': 'rgba(40,255,40,.6)',
+    'ribbon.background.color': 'rgba(255,255,40,.6)',
     }
 
 
@@ -35,7 +35,7 @@ def set_ir_config_parameter(odoo, key_id, value):
     odoo.write(
         'ir.config_parameter',
         ids=[key_id],
-        values={
+        vals={
             'value': value,
             },
         )

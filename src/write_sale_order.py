@@ -14,7 +14,7 @@ def main():
     odoo.write(
         'sale.order',
         ids=[1, 2],
-        values={
+        vals={
             'note': 'TEST',
             },
         )

@@ -14,7 +14,7 @@ def main():
     odoo.write(
         'account.move',
         ids=[1, 2],
-        values={
+        vals={
             'narration': 'TEST',
             'checked': True,
             },

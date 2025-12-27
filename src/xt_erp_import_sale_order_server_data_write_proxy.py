@@ -30,7 +30,7 @@ def main():
     odoo.write(
         'jap.import.sale.order.from.ext.odoo',
         ids=record_ids,
-        values=vals,
+        vals=vals,
         context={'ctx_jap_allow_set_ext_data_importing_sales': True},
         )
 

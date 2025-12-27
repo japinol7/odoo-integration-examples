@@ -7,16 +7,16 @@ from odoo_jsonrpc.odoo_client import OdooClient
 
 def main():
     """Example of usage for the odoo connection that uses jsonrpc or xmlrpc.
-    Creates an out invoice for a given customer.
+    Creates two out invoices for some given customers.
     """
     odoo = OdooClient(**TEST_SERVER_ACCESS_CONFIG).client
 
     odoo.create(
         'account.move',
-        values={
-            'partner_id': 27,
-            'move_type': 'out_invoice',
-            },
+        vals=[
+            {'partner_id': 25, 'move_type': 'out_invoice'},
+            {'partner_id': 27, 'move_type': 'out_invoice'},
+            ],
         )
 
 

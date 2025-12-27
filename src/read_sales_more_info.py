@@ -28,10 +28,10 @@ COMPANY_FIELDS = [
     ]
 
 
-def get_sales_vals(odoo):
+def get_sales_vals(odoo, ids):
     return odoo.read(
         'sale.order',
-        ids=[2, 1],
+        ids=ids,
         fields=SALE_FIELDS,
         )
 
@@ -65,7 +65,8 @@ def main():
     """
     odoo = OdooClient(**TEST_SERVER_ACCESS_CONFIG).client
 
-    sales_vals = get_sales_vals(odoo)
+    sale_ids_to_fetch = [1, 2]
+    sales_vals = get_sales_vals(odoo, ids=sale_ids_to_fetch)
 
     user_ids = [sale_vals['user_id'][0] for sale_vals in sales_vals]
     users_vals = get_users_vals(odoo, user_ids)
@@ -78,10 +79,14 @@ def main():
     for sale_vals in sales_vals:
         user_id = sale_vals['user_id'][0]
         for field in USER_FIELDS:
+            if field in ('id', 'name'):
+                continue
             sale_vals[field] = users_vals_dict[user_id][field]
 
         company_id = sale_vals['company_id'][0]
         for field in COMPANY_FIELDS:
+            if field in ('id', 'name'):
+                continue
             sale_vals[field] = companies_vals_dict[company_id][field]
 
     pp(sales_vals)

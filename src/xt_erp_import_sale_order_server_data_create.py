@@ -36,7 +36,7 @@ def main():
 
     odoo.create(
         'jap.import.sale.order.from.ext.odoo',
-        values=vals,
+        vals=vals,
         )
 
 

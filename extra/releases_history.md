@@ -1,5 +1,11 @@
 # Release History
 
+## v0.0.9
+
+### New features and improvements:
+* Update examples to reflect new changes in the client APIs.
+
+
 ## v0.0.8
 
 ### New features and improvements:

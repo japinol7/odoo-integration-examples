@@ -47,7 +47,7 @@ def main():
     odoo.write(
         'jap.import.sale.order.from.ext.odoo',
         ids=record_ids,
-        values=vals,
+        vals=vals,
         )
 
 

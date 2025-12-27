@@ -27,7 +27,7 @@ def set_addon_state_to_upgrade(odoo, addon_id):
     odoo.write(
         'ir.module.module',
         ids=[addon_id],
-        values={
+        vals={
             'state': 'to upgrade',
             },
         )
