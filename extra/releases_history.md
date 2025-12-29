@@ -5,6 +5,9 @@
 ### New features and improvements:
 * Update examples to reflect new changes in the client APIs.
 
+* Add examples of usage:
+  * read_products_with_context
+
 
 ## v0.0.8
 

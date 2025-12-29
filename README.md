@@ -59,6 +59,7 @@ to use xml-rpc instead of json-rpc.
 * read_group_out_invoices
 * read_group_sales
 * read_out_invs
+* read_products_with_context
 * read_sales
 * read_sales_more_info
 * search_out_invs
